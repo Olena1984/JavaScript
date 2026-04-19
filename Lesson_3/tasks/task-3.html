@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/style.css">
+        <title>Задача 3</title>
+    </head>
+    <body>
+        <!--<h1>Задача 3</h1>
+        <p>Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+        </p> -->
+        <script>
+            // 1. Введення даних
+            const randomNumber = Math.floor(Math.random()* 5) +1;
+            let userResult
+            // 2. Обчислення 
+            alert(`Відгадайте число від 1 до 5 за дві спроби`)
+            const userAttempt1 = parseInt(prompt(`вгадуване число`, `3`))
+            if (userAttempt1 === randomNumber) {
+                userResult = (`Ви вгадали число з першого разу`)
+            }
+            else{
+                const userAttempt2 = parseInt(prompt(`вгадуване число`, `3`)) 
+                if (userAttempt2 === randomNumber) {
+                    userResult = (`Ви вгадали число з другого разу`)
+                }
+                else{
+                    userResult = (`Спроби вичерпано`) 
+                }
+            }
+            alert(`${userResult}\nЗгенероване число ${randomNumber}`)
+
+            
+        </script>
+    </body>
+</html>

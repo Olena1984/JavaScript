@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/style.css">
+        <title>Задача 1</title>
+    </head>
+    <body>
+        <!--<h1>Задача 1</h1>
+        <p>З клавіатури вводяться імена двох дітей та кількість у них цукерок.
+            Вивести не екран ім’я тієї дитини, у якої кількість цукерок є
+            більшою, або вивести, що кількість однакова.
+        </p> -->
+        <script>
+            // 1. Введення даних
+            const childName1 = prompt(`Ім'я першої дитини`, `Яна`)
+            const candyNum1 = parseInt(prompt(`${childName1} має цукерок`, `100`))
+
+            const childName2 = prompt(`Ім'я другої дитини`, `Божена`)
+            const candyNum2 = parseInt(prompt(`${childName2} має цукерок`, `60`))
+            let result
+            // 2. Обчислення 
+            if (isFinite(candyNum1) && isFinite(candyNum2) && candyNum1 >= 0 &&  candyNum2 >= 0){            
+                if(candyNum1 > candyNum2 ){
+                    result = `<p> ${childName1} має цукерок більше ніж ${childName2} </p>`  
+                }else if(candyNum1 < candyNum2 ){ 
+                    result = `<p> ${childName2} має цукерок більше ніж ${childName1} </p>`
+                }else{
+                    result = `<p> ${childName2} та ${childName1} мають  однакову кількість цукерок </p>`
+                }
+            }else{
+                result = `<p> Введіть вірне значення для цукерок</p>`
+            }
+            document.write(result)
+        </script>
+    </body>
+</html>

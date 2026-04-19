@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/style.css">
+        <title>Задача 5</title>
+    </head>
+    <body>
+        <!--<h1>Задача 5</h1>
+        <p>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+
+        </p> -->
+        <script>
+            // 1. Введення даних
+           const  licenseCategory = prompt(`Введіть категорію водія`, `A`).toUpperCase();
+           let result 
+            // 2. Обчислення 
+           switch ( licenseCategory) {
+            case `A`:
+                result = `Ваш транспортний засіб - мотоцикл`
+                break;
+            case `B`:
+                result = `Ваш транспортний засіб - легковий автомобіль`
+                break;
+            case `C`:
+                result = `Ваш транспортний засіб - вантажний автомобіль`
+                break;    
+            default:
+                result = `Категорію не знайдено. Введіть вірну категорію`
+                break;
+           }
+            // document.write(`<p> ${result}</p>`)
+            alert(result)
+
+            // Другий спосіб  
+           /* 
+           if (licenseCategory === `A`) {
+                result = `Ваш транспортний засіб - мотоцикл`
+            } else if (licenseCategory === `B`){
+                result = `Ваш транспортний засіб - легковий автомобіль`     
+            }else if (licenseCategory === `C`){
+                result = `Ваш транспортний засіб - вантажний автомобіль`
+            }else{
+                result = `Категорію не знайдено. Введіть вірну категорію`
+            } 
+            document.write(`<p>${result}</p>`) */
+        </script>
+    </body>
+</html>

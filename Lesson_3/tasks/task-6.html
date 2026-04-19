@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/style.css">
+        <title>Задача 6</title>
+    </head>
+    <body>
+        <!--<h1>Задача 6</h1>
+        <p>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
+
+
+        </p> -->
+        <script>
+            // 1. Введення даних
+           const weekDay = prompt(`Введіть номер дня тижня від 1 до 7`, `1`);
+            // const weekDay = +prompt(`Введіть номер дня тижня від 1 до 7`, `1`);
+           let userResult 
+            // 2. Обчислення 
+           switch (weekDay) {
+            case '1':
+                userResult  = `Понеділок`
+                break;
+            case '2':
+               userResult = `Вівторок`
+                break;
+            case '3':
+                userResult = `Середа`
+                break;
+            case '4':
+                userResult = `Четвер`
+                break; 
+            case '5':
+                userResult = `П'ятниця`
+                break;
+            case '6':
+                userResult = `Субота`
+            break;
+            case '7':
+                userResult = `Неділя`
+                break;              
+            default:
+               userResult = `Введіть вірний день тижня`
+                break;
+           }
+            alert(userResult)
+
+            // Другий спосіб  
+           /* if (weekDay === '1') {
+                userResult  = `Понеділок`
+            } else if (weekDay === `2`){
+                userResult = `Вівторок`     
+            }else if (weekDay === `3`){
+                userResult = `Середа`   
+            }else if (weekDay === `4`){
+                userResult = `Четвер` 
+             }else if (weekDay === `5`){
+                userResult = `П'ятниця` 
+             }else if (weekDay === `6`){
+                userResult = `Субота`
+            }else if (weekDay === `7`){
+                userResult = `Неділя`              
+            }else{
+                userResult = `Введіть вірний день тижня`
+            } 
+            document.write(`<p>${userResult }</p>`)  */
+        </script>
+    </body>
+</html>
