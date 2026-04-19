@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задача 1</title>
+    </head>
+    <body>
+        <!-- <p>Користувач вводить кількість елементів. Створити масив, що
+        складається з вказаної кількості елементів заповнених
+        нулями.
+    </p> -->
+    <script>
+        function createNewArr(numberArr) {
+            let newFilledArray = new Array(numberArr).fill(0)
+            return newFilledArray
+        }
+        const numberArr = parseInt(prompt('Введіть число','5'))
+        const newArr = createNewArr(numberArr)
+        console.log(newArr);
+        
+    </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задача8</title>
+    </head>
+    <body>
+       <!--  <p>Дано масив номерів авто. Сформувати новий масив тих, які починаються
+            на «А»
+        </p> -->
+
+        <script>
+            const carLicense = ['KI3163XX', 'AM5011HK', 'AE1087KA', 'CA5288XX', 'AP6886TX', 'CH0961HK']
+            const letter = 'A'
+
+            let newCarLicense = carLicense.filter(el =>el[0]===letter)
+            console.log(newCarLicense);
+            
+        </script>
+    </body>
+</html>

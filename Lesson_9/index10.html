@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача10</title>
+</head>
+<body>
+    <!-- <p> Дано масив цін у грн. Податок складає 20%. Сформувати масив, який буде містити величину сплаченого податку у грн.</p> -->
+
+    <script>
+        const prices = Array.from({length:20}, ()=>Math.floor(Math.random()*1000))
+        console.log(prices);
+        const TAX = 0.2
+
+        let taxPaid = prices.map(price => parseFloat((price*TAX).toFixed(2)))
+        console.log(taxPaid);
+    </script>
+</body>
+</html>

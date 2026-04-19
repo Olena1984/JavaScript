@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задача 4</title>
+    </head>
+    <body>
+        <!--  <p>Дано масив елементів. Вивести на екран елементи, що більші за 100 (використати цикл for..of)</p> -->
+
+        <script>
+        let array = [1, 5, 230, 110, 169, 100, 500, 1000, 10, 50,  300]
+        function getElementsMore100(numbers) {
+            const compareNum = 100
+            for (const element of numbers) {
+                if (element>compareNum)
+                document.write(`${element},`) 
+            }
+        }
+        const result = getElementsMore100(array)
+
+        
+   </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задача 2</title>
+    </head>
+    <body>
+        <!-- <p>Користувач вводить кількість елементів. Створити масив, у
+            якому перша половина заповнена 1-цями, а друга заповнена
+            7-ками.
+        </p> -->
+        <script>
+            function getArr(num) {
+                let array = new Array(num);
+                
+                const halfArray = Math.floor(num/2)
+                array.fill(1,0,halfArray)
+                array.fill(7,halfArray)
+                    
+                return array
+            }
+
+            const numberArray = parseInt(prompt('Введіть число','10'))
+            const newArr = getArr(numberArray)
+        </script>
+    </body>
+</html>

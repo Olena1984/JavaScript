@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задача 5</title>
+    </head>
+    <body>
+        <!--  <p>Дано масив елементів. Знайти добуток додатних елементів (використати цикл for..of)
+</p> -->
+
+        <script>
+            let arrayNumbers = [23, 56, 4, -45, -19, 90, -3, -10, 4, 9]
+            function getProduct(numbers) {
+                let product = 1
+                for (const num of numbers) {
+                    if (num>0) product*=num 
+                }
+                return product
+            }
+            const resProduct = getProduct(arrayNumbers)
+            console.log(resProduct);
+    
+</script>
+    </body>
+</html>

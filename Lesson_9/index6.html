@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задача 6</title>
+    </head>
+    <body>
+        <!-- <p>Дано масив елементів. Усі елементи, які більші за перший елемент
+            помножити на 2
+        </p> -->
+
+        <script>
+            // створення масиву чисел
+
+            function createArrNumbers(numbers) {
+                let newArray = []
+                for (let i = 0; i <numbers; i++) {
+                    const randNum = Math.floor(Math.random()*100)
+                    newArray.push(randNum) 
+                }
+                return newArray  
+            }
+            const resArray = createArrNumbers(10)
+            // document.write(`Масив чисел:${resArray}`)
+            console.log(resArray);
+            
+
+            // forEach
+            const firstEl = resArray[0]
+            resArray.forEach((element, index, arr) => {
+                if (element > firstEl) {
+                    arr[index]*=2
+                }
+            });
+            document.write(` ${resArray}`)
+            
+        //   варіант із застосуванням map
+            
+            // let arr = Array.from({length:20}, ()=> Math.floor(Math.random()*100))
+            
+            // const firstElement = arr[0]
+            // const newArray = arr.map((element) => 
+            //     element>firstElement? element*2 : element
+            //     )
+            // console.log(arr);
+            // console.log(newArray);
+            // document.write(`${arr}<br>`)
+            // document.write(` ${newArray}`)
+            
+        </script>
+    </body>
+</html>

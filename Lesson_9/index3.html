@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задача 3</title>
+    </head>
+    <body>
+        <!-- <p>Користувач вводить кількість елементів. Створити масив, у якому перші 5 елементів заповнені 1-цями, а інші до кінця масиву заповнені 7-ками.</p> -->
+
+    <script>
+        function getNewArray(number) {
+            let newArray = new Array(number)
+            newArray.fill(1,0,5)
+            newArray.fill(7,5)
+            return newArray
+        }
+        const arrLength = parseInt(prompt('Введіть число','12'))
+        const resArr = getNewArray(arrLength)
+        console.log(resArr);
+        
+    </script>
+    </body>
+</html>
