@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/style.css">
+        <title>Задача 6</title>
+    </head>
+    <body>
+        <h1>Задача 6
+        </h1>
+        <p>З клавіатури вводяться вартість товару та кількість одиниць 3
+            товарів. Обчислити вартість кожного товару окремо та загальну
+            вартість. Вивести чек (як у супермаркеті) використовуючи елементи
+            розмітки.
+
+        </p>
+
+        <script>
+             // запитуємо числа
+            const product1 = prompt("Вкажіть назву товару №1", "Молоко");
+            const quantity1 = parseInt(prompt(`Вартість кількість товару, шт.`, '0'));
+            const value1 = parseFloat(prompt(`Вартість товару, грн.`, '0'));
+           
+            const product2 = prompt("Вкажіть назву товару №2", "Молоко");
+            const quantity2 = parseInt(prompt(`Вартість кількість товару, шт.`, '0'));
+            const value2 = parseFloat(prompt(`Вартість товару, грн.`, '0'));
+            
+            const product3 = prompt("Вкажіть назву товару №3", "Молоко");
+            const quantity3 = parseInt(prompt(`Вартість кількість товару, шт.`, '0'));
+            const value3 = parseFloat(prompt(`Вартість товару, грн.`, '0'));
+            
+            // отримання результату
+            const result1 = value1 * quantity1;
+            const result2 =  value2 * quantity2;
+            const result3 =  value3 * quantity3;
+
+            const total = result1 + result2 + result3;
+
+           document.write(`<h2>Товарний чек:</h2> 
+            <p><b>${product1}</b> ${value1} грн. * ${quantity1} шт. = <b>${result1}</b> грн.<br>
+            <br>
+            <b>${product2}</b> ${value2} грн. * ${quantity2} шт. = <b>${result2}</b> грн.<br>
+            <br>
+            <b>${product3}</b> ${value3} грн. * ${quantity3} шт. = <b>${result3}</b> грн.<br></p>
+            
+            <p><b>Загальна вартість покупки становить: ${total} грн.<b/></p>`)
+            
+        </script>
+    </body>
+</html>

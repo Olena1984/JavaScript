@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/style.css">
+        <title>Задача 0</title>
+    </head>
+    <body>
+        <h1>Задача 0</h1>
+        <!-- <ol>
+            <li> S1=a+12+b</li>
+            <li> S2=(a+b/2a) - корінь квадратний виразу a+b/2a</li>
+            <li> S3=(a+b)*c - корінь кубічний виразу (a+b)c</li>
+            <li> S4=sin⁡(a/-b)</li>
+        </ol> -->
+        <script>
+            // запитуємо числа
+            // const numA = parseInt(prompt(`Введіть число a`, '0'));
+            // const numB = parseInt(prompt(`Введіть число b`, '0'));
+            // const numC = parseInt(prompt(`Введіть число c`, '0'));
+
+            const numA = parseFloat(prompt(`Введіть число a`, '0'));
+            const numB = parseFloat(prompt(`Введіть число b`, '0'));
+            const numC = parseFloat(prompt(`Введіть число c`, '0'));
+            
+            // опрацювання результату
+            // 1.
+            const resultS1 = numA + 12 + numB;
+
+            // 2.
+            const resultS2 = Math.sqrt((numA + numB) / (2*numA));
+            // або другий варіант
+            const resS2 =  ((numA + numB) / (2*numA)) ** (1/2);
+            
+
+            // 3.
+            const resultS3 = Math.cbrt((numA + numB)*numC);
+            // або другий варіант
+            const resS3 = ((numA + numB)*numC) ** (1/3);
+        
+            // 4.
+            const resultS4 = Math.sin(numA / -numB);
+            
+            // вивід результатів
+            document.write(`<p>Результат обчислення S1: ${resultS1} <br> Результат обчислення S2: ${resultS2},  ${resS2} <br> Результат обчислення S3: ${resultS3},  ${resS3} <br> Результат обчислення S4: ${resultS4}
+            </p>`);
+            
+        </script>
+    </body>
+</html>

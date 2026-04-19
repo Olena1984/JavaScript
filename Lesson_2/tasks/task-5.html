@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/style.css">
+        <title>Задача 5</title>
+    </head>
+    <body>
+        <h1>Задача 5 
+        </h1>
+        <p>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+</p>
+
+        <script>
+             // запитуємо числа
+            const userValue = parseInt(prompt(`Введіть кількість секунд`, '0'));
+
+            const minInSec = 60;
+            const hourInSec = 3600;
+            
+            // отримання результату
+            const totalValueMin = Math.floor(userValue / minInSec);
+            const totalValueHour = Math.floor(userValue / hourInSec);
+
+
+            document.write(`<p> ${userValue} секунд це - ${totalValueMin} хв, та - ${totalValueHour
+            } год.</p>`);
+        </script>    
+    </body>
+</html>
+
