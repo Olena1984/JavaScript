@@ -142,3 +142,20 @@ h6 {
     justify-content: center;
     margin: auto;
 }
+.sort{
+    display: flex;
+    gap: 20px;
+    border: none;
+   
+}
+.sortRow{
+    border: none;
+}
+.sortCol{
+    width: 50px;
+    border: none;
+}
+.active{
+    color: red;
+   
+}
