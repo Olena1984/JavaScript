@@ -174,6 +174,25 @@ console.log(sumArea4);
 // console.log(sum3);
 // console.log(sum4);
 // ===============================================================================
+// Універсальна функція розв'язку задач 1-4
+function getSumDeterminedArea(arr, rowStart, rowEnd, colStart, colEnd) {
+    let sumArea = 0;
+    for (let row = rowStart; row < rowEnd; row++) {
+        for (let col = colStart; col < colEnd; col++) {
+            sumArea += arr[row][col];
+        }
+    }
+    return sumArea;
+}
+const result1 = getSumDeterminedArea(multidimensionalArray, 0, halfRow, 0, halfCol);
+const result2 = getSumDeterminedArea(multidimensionalArray, 0, halfRow, halfCol, multidimensionalArray[0].length);
+const result3 = getSumDeterminedArea(multidimensionalArray, halfRow, multidimensionalArray.length, 0, halfCol);
+const result4 = getSumDeterminedArea(multidimensionalArray, halfRow, multidimensionalArray.length, halfCol, multidimensionalArray[0].length);
+console.log(result1);
+console.log(result2);
+console.log(result3);
+console.log(result4);
+// ===============================================================================
 // 5) Суму парних рядків
 let sumEvenRow = 0;
 for (let row = 0; row < multidimensionalArray.length; row += 2) {
@@ -237,14 +256,13 @@ console.log(sumOddRevenC);
 // reduce
 let mixSum = multidimensionalArray.reduce((prevSum, rows, rowInd) => {
     if (rowInd % 2 === 0) {
-        prevSum[0] +=
-            rows.reduce((colSum, cols, colInd) => {
-                return (colInd % 2 !== 0) ? colSum + cols : colSum;
-            }, 0);
+        prevSum[0] += rows.reduce((colSum, cols, colInd) => {
+            return colInd % 2 !== 0 ? colSum + cols : colSum;
+        }, 0);
     }
     else {
         prevSum[1] += rows.reduce((colSum, cols, colInd) => {
-            return (colInd % 2 === 0) ? colSum + cols : colSum;
+            return colInd % 2 === 0 ? colSum + cols : colSum;
         }, 0);
     }
     return prevSum;
