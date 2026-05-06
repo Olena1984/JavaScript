@@ -159,3 +159,12 @@ h6 {
     color: red;
    
 }
+/* ============================================= */
+.cols{
+    width: 35px;
+    height: 35px;
+}
+.field-game{
+    width: auto;
+    margin-left: 120px;
+}
