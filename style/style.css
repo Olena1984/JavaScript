@@ -4,14 +4,18 @@ body {
     padding-block: 20px;
 }
 a {
-    color: rgb(165, 25, 146);
+    color: rgb(151, 20, 134);
     font-size: 1.25rem;
     text-decoration: none;
 }
-p {
-    font-size: 1.125rem;
+div, p {
+    font-size: 1.25rem;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+ul li, ol li {
+    font-size: 1.125rem;
+    line-height: 1.5;
 }
 table {
     width: 500px;
@@ -86,13 +90,18 @@ h6 {
 }
 .row {
 }
-.col {
+.col, .col2 {
     width: 50px;
     height: 50px;
     background-color: rgb(129, 94, 161);
     border:
         1px,
         solid rgb(168, 108, 224);
+}
+.col2{
+    width: 60px;
+    height: 120px;
+    
 }
 .col.missed {
     background-image: url(../Lesson_6/images/rabbit.png);
@@ -164,7 +173,24 @@ h6 {
     width: 35px;
     height: 35px;
 }
+.color{
+    color: red;
+}
 .field-game{
     width: auto;
     margin-left: 120px;
+}
+.title{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.image img{
+    width: 300px;
+    margin-bottom: 20px;
 }
