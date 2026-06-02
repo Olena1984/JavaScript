@@ -194,3 +194,7 @@ h6 {
     width: 300px;
     margin-bottom: 20px;
 }
+.message{
+    font-weight: bold;
+    color: red;
+}
