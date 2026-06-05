@@ -1,0 +1,124 @@
+/* body {
+    font-family: "Roboto";
+    font-size: 1rem;
+    padding-block: 20px;
+}
+a {
+    color: rgb(151, 20, 134);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+div,
+p {
+    font-size: 1.25rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+ul li,
+ol li {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+table {
+    width: 500px;
+    text-align: center;
+}
+table,
+th,
+td,
+tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}  */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(233, 171, 233);
+    padding: 25px;
+    border-radius: 50px;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+button {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    /* background-color: rgb(229, 233, 229); */
+}
+button:focus,
+button:hover {
+    background-color: rgb(160, 80, 226);
+    color: white;
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.my_table,
+tr,
+td,
+th {
+    border: 0px solid white;
+    outline: none;
+    text-align: left;
+}
+.travel {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}

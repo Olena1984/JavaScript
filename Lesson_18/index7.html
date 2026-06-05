@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Задача 7</title>
+    </head>
+    <body>
+        <div class="travel">
+            <label for="transport">Виберіть транспортний засіб:</label>
+            <select name="transport" id="transport">
+                <option value="1000">Автобус</option>
+                <option value="3000">Літак</option>
+                <option value="2000">Авто</option>
+            </select>
+            <p>Харчування на вибір:</p>
+            <form action="#">
+                <input type="checkbox" name="breakfast" id="breakfast" value="800" checked>
+                <label for="breakfast">Сніданок</label><br>
+                <input type="checkbox" name="lunch" id="lunch" value="500">
+                <label for="lunch">Обід</label><br>
+                <input type="checkbox" name="diner" id="dinner" value="700">
+                <label for="dinner">Вечеря</label>
+            </form>
+            <p>Виберіть вашого гіда:</p>
+            <form action="#">
+                <input type="radio" name="guide" id="guide1" value="1500" checked>
+                <label for="guide1">гід Ірина</label><br>
+                <input type="radio" name="guide" id="guide2" value="1800">
+                <label for="guide2">гід Михайло</label><br>
+                <input type="radio" name="guide" id="guide3" value="2000">
+                <label for="guide3">гід Олекса</label>
+            </form>
+            <button id="count">Підрахувати</button>
+            <div class="pay" id="pay"></div>
+        </div>
+        <script src="javascript/task7.js"></script>
+    </body>
+</html>
