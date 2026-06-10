@@ -15,9 +15,9 @@ const num2: number = 100;
 function createTable() {
   const table = document.createElement("table");
   table.className = "table";
-  for (let i = 0; i < 3; i++) {
+  for (let t = 0; t < 3; t++) {
     const trEl = document.createElement("tr");
-    for (let i = 0; i < 3; i++) {
+    for (let tr = 0; tr < 3; tr++) {
       const tdEl = document.createElement("td");
       tdEl.innerText = String(
         Math.floor(num1 + Math.random() * (num2 - num1 + 1)),

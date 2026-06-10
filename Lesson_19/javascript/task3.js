@@ -13,11 +13,12 @@ const maxElList = 10;
 const numList = 5;
 function createList() {
     const listContainer = document.getElementById("list");
-    for (let i = 0; i < numList; i++) {
+    for (let ol = 0; ol < numList; ol++) {
         const olEl = document.createElement("ol");
-        olEl.classList = "items";
+        olEl.classList.add("items");
+        //  olEl.className = "items"
         const randNum = Math.floor(minEl + Math.random() * (maxElList - minEl + 1));
-        for (let i = 0; i < randNum; i++) {
+        for (let li = 0; li < randNum; li++) {
             const liEl = document.createElement("li");
             liEl.innerText = Math.floor(minEl + Math.random() * (maxEl - minEl + 1)).toString();
             olEl.append(liEl);
