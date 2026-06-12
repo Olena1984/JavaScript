@@ -1,0 +1,171 @@
+body {
+    font-family: "Roboto";
+    font-size: 1rem;
+    /* padding-block: 20px; */
+}
+a {
+    color: rgb(151, 20, 134);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+div, p {
+    font-size: 1.25rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+ul li, ol li {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+table {
+    width: 500px;
+    text-align: center;
+}
+table,
+th,
+td,
+tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.starsky{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(11, 34, 110);
+    overflow: hidden;
+}
+.star{
+    position: absolute;
+    
+}
+/* ====================== */
+.tanks{
+    
+    height: 100vh;
+    position: relative;
+    background-color: rgba(36, 112, 69, 0.678);
+    overflow: hidden;
+}
+.tank{
+position: absolute;
+}
+.tank img{
+    width: 100px;
+    cursor: crosshair;
+}
+/* ================ */
+.forms-container{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* ===================== */
+.forms{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+.forms button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(213, 67, 226);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+/* =============== */
+.transports{
+
+    display: flex;
+    align-items: center;
+}
+.title{
+    margin-bottom:15px;
+}
+.list-container{
+    width: 200px;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+.list-container:not(:last-child){
+    margin-bottom: 20px;
+}
+.booking{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(180, 155, 182);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+/* ============== */
+.item input{
+    display:none;
+}
+.checked{
+    border: 2px solid blue;
+}
+/* ============ */
+.search-container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.list-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+.hide{
+    display: none;
+}
+/* ================== */
+.select-container{
+    diSplay: flex; 
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+.select-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.result ul{
+    list-style: none;
+    padding-left: 0;
+}
