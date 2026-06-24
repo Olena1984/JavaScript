@@ -31,10 +31,14 @@ class LoadDate {
     let response = await fetch(
       "https://meowfacts.herokuapp.com/?lang=ukr&count=10",
     );
+
     if (response.ok) {
       const date = await response.json();
       console.log(date.data);
       return date.data;
+    }else{
+      throw new Error("Network error");
+      
     }
   }
 }
